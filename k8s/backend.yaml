@@ -12,18 +12,6 @@ spec:
       labels:
         app: backend
     spec:
-      affinity:
-        podAntiAffinity:
-          preferredDuringSchedulingIgnoredDuringExecution:
-          - weight: 100
-            podAffinityTerm:
-              labelSelector:
-                matchExpressions:
-                - key: app
-                  operator: In
-                  values:
-                  - backend
-              topologyKey: kubernetes.io/hostname
       containers:
       - name: backend
         image: nithinq/ecom-backend:v1
