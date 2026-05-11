@@ -323,8 +323,6 @@ Go to **Settings → Secrets and variables → Actions** and add:
 
 ## Lessons Learned
 
-This was not built by following a tutorial. Every problem below was real and had to be debugged and fixed:
-
 - **Worker nodes stuck NotReady on Windows** — CNI plugin was never initialised. Fixed by passing `--cni=flannel` to minikube start.
 - **minikube NodePort unreachable from outside EC2** — minikube runs inside Docker on EC2 so NodePort traffic never reaches the host. Fixed with `kubectl port-forward --address 0.0.0.0` wrapped in a systemd service.
 - **Port 80 refused for non-root user** — Linux requires root to bind ports below 1024. Fixed with `setcap cap_net_bind_service=ep /usr/local/bin/kubectl`.
