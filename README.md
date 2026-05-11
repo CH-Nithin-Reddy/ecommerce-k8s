@@ -80,13 +80,6 @@ frontend-pdb   2               1
 ```
 Kubernetes is forced to keep at least 2 replicas alive during any maintenance or rolling update. The app never goes fully down.
 
-### Pod Anti-Affinity
-Replicas are always scheduled on **different nodes**. If one node dies, other nodes already have live pods. Traffic continues without interruption.
-
-```
-backend-pod-1   →  minikube       (control-plane)
-backend-pod-2   →  minikube-m02   (worker)
-backend-pod-3   →  minikube-m03   (worker)
 ```
 
 ### Liveness & Readiness Probes
