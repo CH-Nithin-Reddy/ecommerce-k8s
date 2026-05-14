@@ -212,7 +212,6 @@ Load test script: [`loadtest.js`](loadtest.js)
 
 ## Repository Structure
 
-```
 ecommerce/
 ├── frontend/                    # React + Vite app
 │   ├── src/
