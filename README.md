@@ -15,7 +15,7 @@
 
 ## What This Project Is
 
-A fully production-grade, highly available e-commerce application deployed on a **3-node Kubernetes cluster running on AWS EC2**. Built from scratch in 5 weeks — no managed Kubernetes, no shortcuts.
+A fully production-grade, highly available e-commerce application deployed on a **3-node Kubernetes cluster running on AWS EC2**.
 
 The app is a real store: browse products by category, add to cart, place orders, view order history. The entire infrastructure underneath it is battle-hardened with high availability, autoscaling, observability, and GitOps.
 
